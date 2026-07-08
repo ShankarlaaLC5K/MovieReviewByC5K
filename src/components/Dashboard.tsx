@@ -8,7 +8,6 @@ export const Dashboard = () => {
   const [minRating, setMinRating] = useState<number>(0);
   const [yearFilter, setYearFilter] = useState<number | "">("");
 
-  // Genre list for the map method
   const genres = [
     { id: "28", name: "Action" },
     { id: "12", name: "Adventure" },
@@ -66,7 +65,7 @@ export const Dashboard = () => {
           ))}
         </select>
 
-        {/* Rating Input */}
+
         <div className="flex items-center gap-2 whitespace-nowrap">
           <label className="text-sm text-gray-400">Min Rating:</label>
           <input
@@ -85,7 +84,7 @@ export const Dashboard = () => {
         </div>
       </div>
 
-      {/* Results Grid */}
+
       <div className="mt-8">
         <MovieGrid
           query={searchQuery}
